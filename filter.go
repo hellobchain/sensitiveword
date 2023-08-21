@@ -24,6 +24,7 @@ type sensitiveWordConf struct {
 func NewSensitiveWordFilterFromPath(store string, path string, sensitiveFileName string, excludedSymbolFileName string, words []string) *Filter {
 	return newSensitiveWordFilterFromPath(&sensitiveWordConf{
 		Store:                  store,
+		Path:                   path,
 		SensitiveFileName:      sensitiveFileName,
 		ExcludedSymbolFileName: excludedSymbolFileName,
 		Words:                  words,
